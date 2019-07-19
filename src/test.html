@@ -1,0 +1,35 @@
+<! DOCTYPE HTML>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <!-- <script type="text/javascript">
+        up = () =>{
+            let result = document.getElementById("content").innerText;
+             result++;
+            document.getElementById("content").innerHTML=result;
+        }
+        down =() =>{
+            let result = document.getElementById("content").innerText;
+            result--;
+            document.getElementById("content").innerHTML=result;
+        }
+    </script> -->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js">
+            var up = new Vue({
+            el: '#app',
+            data: {
+                count: 0
+            }
+            })
+    </script>
+</head>
+<body>
+    <div id="app">
+            <p id = "content">{{ count }}}</p>
+        <button id = "button1" onclick="up()">+</button>
+        <button id = "button2"  onclick="down()">_</button>
+    </div>
+
+</body>
+
+</html>
